@@ -11,8 +11,17 @@
     "test": "npm run lint",
     "watch": "tsc --watch",
     "build": "tsc",
-    "document": "typedoc --out docs src"
+    "document": "typedoc --out docs src",
+    "prepack": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codetheweb/mtu-courses.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codetheweb/mtu-courses/issues"
+  },
+  "homepage": "https://github.com/codetheweb/mtu-courses#-mtu-courses",
   "keywords": [
     "mtu",
     "michigan tech",
