@@ -29,4 +29,6 @@ const Courses = require('mtu-courses');
 
 All dates/times are in UTC.
 
-## Docs
+## 📚 Docs
+
+[Hosted on Github Pages](https://codetheweb.github.io/mtu-courses/).
