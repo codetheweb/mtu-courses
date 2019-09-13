@@ -1,7 +1,7 @@
 {
   "name": "mtu-courses",
   "version": "0.1.0",
-  "description": "",
+  "description": "🏛 scape all courses for a given semester from Michigan Tech's website",
   "files": [
     "dist/"
   ],
@@ -13,8 +13,21 @@
     "build": "tsc",
     "document": "typedoc --out docs src"
   },
+  "keywords": [
+    "mtu",
+    "michigan tech",
+    "course",
+    "courses",
+    "class",
+    "schedule",
+    "banweb",
+    "student",
+    "college",
+    "scrape",
+    "typescript"
+  ],
   "author": "Max Isom <hi@maxisom.me> (https://maxisom.me/)",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/cheerio": "^0.22.13",
     "@types/got": "^9.6.7",
