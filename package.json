@@ -1,6 +1,6 @@
 {
   "name": "mtu-courses",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "🏛 scape all courses for a given semester from Michigan Tech's website",
   "files": [
     "dist/"
