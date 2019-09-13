@@ -11,7 +11,7 @@
     "test": "npm run lint",
     "watch": "tsc --watch",
     "build": "tsc",
-    "document": "documentation readme src/index.ts -f md --section=Docs"
+    "document": "typedoc --out docs src"
   },
   "author": "Max Isom <hi@maxisom.me> (https://maxisom.me/)",
   "license": "ISC",
@@ -20,9 +20,9 @@
     "@types/got": "^9.6.7",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
     "@typescript-eslint/parser": "^2.2.0",
-    "documentation": "^12.1.2",
     "eslint-config-xo-typescript": "^0.18.0",
     "husky": "^3.0.5",
+    "typedoc": "^0.15.0",
     "typescript": "^3.6.2",
     "xo": "^0.24.0"
   },
@@ -38,6 +38,7 @@
   },
   "xo": {
     "space": true,
+    "ignore": "docs",
     "extends": "xo-typescript",
     "rules": {
       "@typescript-eslint/indent": [

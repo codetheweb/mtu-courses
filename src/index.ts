@@ -5,6 +5,7 @@ import * as chrono from 'chrono-node';
 import Course from './course';
 
 class Courses {
+  /** Array of fetched courses. **/
   courses: Course[];
 
   private readonly _client: any;
@@ -17,6 +18,10 @@ class Courses {
     });
   }
 
+  /**
+   * Scrape courses.
+   * @returns Promise
+   */
   async load({term: {year, month}} = {term: {year: new Date().getFullYear(), month: 8}}): Promise<Courses> {
     const termId = `${year}${month.toString().padStart(2, '0')}`;
 

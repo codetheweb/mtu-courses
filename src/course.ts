@@ -1,4 +1,5 @@
 import chrono from 'chrono-node';
+import {addDays, mapDayOfWeekCharacter} from './utils';
 
 interface Term {
   year?: number;
@@ -100,6 +101,7 @@ class Course implements CourseDetails {
     this.term = options.term;
   }
 
+  /** Get all meeting dates for course. **/
   getMeetingDates(): Date[] {
     let currentWeek = this.startDate;
     let dayCounter = 0;
@@ -124,29 +126,6 @@ class Course implements CourseDetails {
 
     return dates;
   }
-}
-
-const mapDayOfWeekCharacter = (s: string): string => {
-  switch (s) {
-    case 'M':
-      return 'Monday';
-    case 'T':
-      return 'Tuesday';
-    case 'W':
-      return 'Wednesday';
-    case 'R':
-      return 'Thursday';
-    case 'F':
-      return 'Friday';
-    default:
-      return '';
-  }
-};
-
-function addDays(date: Date, days: number): Date {
-  const result = new Date(date);
-  result.setDate(result.getDate() + days);
-  return result;
 }
 
 export default Course;
