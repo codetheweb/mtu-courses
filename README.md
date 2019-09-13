@@ -1,6 +1,6 @@
 # 🏛 mtu-courses
 
-Scape all courses for a given semester from Michigan Tech's website.
+Scrape all courses for a given semester from Michigan Tech's website.
 
 ## Install
 
@@ -17,7 +17,7 @@ const Courses = require('mtu-courses');
   await mtu.load();
 
   // Get all meeting dates for first loaded course
-  console.log(mtu.courses[0].getMeetingDates());
+  console.log(mtu.courses.find(course => course.startDate !== undefined).getMeetingDates());
 
   const totalFee = mtu.courses.filter(course => course.online).reduce((accum, course) => accum + course.fee, 0);
 
@@ -25,9 +25,11 @@ const Courses = require('mtu-courses');
 })();
 ```
 
-(Note that the Michigan Tech website/database system is quite slow and it takes around 13-15 seconds for `await mut.load()` to complete.)
+(Note that the Michigan Tech website/database system is quite slow and it takes around 13-15 seconds for `await mtu.load()` to complete.)
 
 All dates/times are in UTC.
+
+Fees are in cents instead of dollars to be consistent with the way financal data is usually handled in code.
 
 ## 📚 Docs
 

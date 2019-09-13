@@ -1,4 +1,4 @@
-import chrono from 'chrono-node';
+import * as chrono from 'chrono-node';
 import {addDays, mapDayOfWeekCharacter} from './utils';
 
 interface Term {

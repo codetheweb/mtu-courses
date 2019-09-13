@@ -1,7 +1,7 @@
 {
   "name": "mtu-courses",
   "version": "0.1.1",
-  "description": "🏛 scape all courses for a given semester from Michigan Tech's website",
+  "description": "🏛 scrape all courses for a given semester from Michigan Tech's website",
   "files": [
     "dist/"
   ],
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/codetheweb/mtu-courses#-mtu-courses",
   "keywords": [
+    "🏛",
     "mtu",
     "michigan tech",
     "course",
